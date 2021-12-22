@@ -1,0 +1,594 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: "header"
+  "mancuerna"
+  "descripcion"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto 500px auto auto;
+  overflow: hidden;
+  gap:20px;
+}
+
+.gridContainerNosotros{
+  display: grid;
+  grid-template-areas: "header"
+  "imagenPresentacion"
+  "titulo"
+  "foto"
+  "parrafo"
+  "videoNosotros"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto 410px auto auto 85px auto auto;
+  overflow: hidden;
+  gap: 10px;
+}
+
+header {
+  grid-area: header;
+  justify-content: space-between;
+  background-color: #fff;
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+ 
+}
+
+.item4{
+grid-area: menu;
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+
+}
+
+.item9{
+grid-area: footer;
+background-color: gray;
+flex-direction: row;
+}
+
+
+  .header__navflex {
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 100%;
+}
+
+
+.header__logo {
+ 
+  width: 150px;
+  padding: 10px 20px;
+}
+
+.header__listflex {
+  display: flex;
+  list-style: none;
+  position: relative;
+  flex-wrap: wrap;
+  
+  
+} 
+
+.header__itemflex{
+margin: 0px 1rem;
+
+}
+
+.header__linkflex{
+  text-decoration: none;
+  color:#272727;
+  font-weight: bold;
+}
+
+.imagen__principal{
+  max-width: 100%;
+  height: auto;
+  width: 800px;
+  
+}
+
+.main__titulo{
+  font-size: 2rem;
+  text-align: center;
+  font-family: Outfit, sans-serif;
+  text-decoration: underline;
+  padding: 10px;
+  position: absolute;
+  left: 24%;
+  bottom: 67%;
+}
+
+.main__titulo--secundario1 {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 26%;
+  bottom:32%;
+  font-style: italic;
+  
+}
+
+  .main__titulo--secundario2 {
+      font-size: 1.5rem;
+      position: absolute;
+     bottom: 31%;
+      font-style: italic;
+     left:71%
+      
+  }
+
+
+  .main__descripcion--parrafo {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+  
+}
+
+
+
+ 
+    .main__descripcion {
+      align-items: center;
+      display: block;
+      width: 600px;
+      margin: 0 auto;
+      font-family: "PT Sans Narrow", sans-serif;
+      text-align: justify;
+  }
+
+
+
+  .main__descripcion--titulo {
+    font-size: 2rem;
+    text-decoration: underline;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.main__imagenyTitulo{
+ height: 68vh;
+ width: 96%;
+ max-width: 650px;
+ margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.footer__item {
+  display: inline-block;
+  padding: 15px;
+ 
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-areas: "header header"
+  "imagenContacto imagenContacto  "
+  "formulario mapa"
+  "footer footer";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 1fr auto auto;
+  overflow: hidden;
+
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.mancuerna{
+  grid-area: mancuerna;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+.main {
+  grid-area: imagenContacto;
+  display: flex;
+  justify-content: center;
+  height: 55vh;
+}
+
+.formulario{
+ grid-area: formulario;
+ height: 70vh;
+ overflow: hidden;
+
+}
+
+.mapa{
+grid-area: mapa;
+overflow: hidden;
+height: 70vh;
+}
+
+
+.capa{
+ position:absolute;
+ top:0;
+ width: 100%;
+ height: 100%;
+}
+
+.capa2{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  left: 40%;
+  top: 39%;
+}
+
+.main__titulo {
+  top: -10px;
+  margin-right: 155px;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color:#333d4c;
+  overflow: hidden;
+}
+
+.footer__lista {
+  display: flex;
+  justify-content: center;
+}
+
+li > span {
+ text-align: center;
+}
+
+.mail{
+text-align: center;
+color: #b4c3da;
+font-weight: 700;
+}
+
+.descripcion__formulario{
+  display: block;
+}
+
+a:link{
+  color:grey; 
+}
+
+
+@media only screen and (min-width:0px) and (max-width:575.98px){
+	.gridContainer{
+    display: grid;
+  grid-template-areas: "header"
+  "imagenContacto"
+  "formulario"
+  "mapa"
+  "footer";
+  grid-template-columns: 100% ;
+  grid-template-rows: auto auto auto auto;
+  overflow: hidden;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width:767.98px){
+	.gridContainer{
+    display: grid;
+  grid-template-areas: "header"
+  "imagenContacto"
+  "formulario"
+  "mapa"
+  "footer";
+  grid-template-columns: 100% ;
+  grid-template-rows: auto auto auto auto;
+  overflow: hidden;
+  }
+}
+
+@media only screen and (min-width:768px){
+	.gridContainer{
+    display: grid;
+  grid-template-areas: "header header"
+  "imagenContacto imagenContacto  "
+  "formulario mapa"
+  "footer footer";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 1fr auto auto;
+  overflow: hidden;
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:575.98px){
+	.main__descripcion{
+    width: 450px;
+}
+  .main__titulo{
+    font-size: 1.5rem;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-areas: "header"
+    "mancuerna"
+    "descripcion"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width:767.98px){
+	.main__titulo{
+    font-size: 1.8rem;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-areas: "header"
+    "mancuerna"
+    "descripcion"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    overflow: hidden;
+  }
+}
+
+
+.gridContainerProductos{
+  display: grid;
+  grid-template-areas: "header header header"
+  "imagenPelotas imagenMancuernas ImagenBicicletas"
+  "tituloPelotas tituloPelotas tituloPelotas"
+  "imagenPelota1 imagenPelota2 imagenPelota3"
+  "tituloMancuernas tituloMancuernas tituloMancuernas"
+  "mancuerna1 mancuerna2 mancuerna3"
+  "tituloBicicletas tituloBicicletas tituloBicicletas"
+  "bicicleta1 bicicleta2 bicicleta3"
+  "footer footer footer"; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 300px auto 300px auto 300px auto 300px auto;
+  column-gap: 30px;
+  background-color: #272727;
+  margin: 0 auto;
+}
+
+
+
+
+
+.bicicleta3{
+    grid-area: bicicleta3;
+    width: 100%;
+    height: 100%;
+}
+
+
+.bicicleta2{
+  grid-area: bicicleta2;
+  width: 100%;
+  height: 100%;
+}
+
+.bicicleta1{
+  grid-area: bicicleta1;
+  width: 100%;
+  height: 100%;
+}
+
+.mancuerna1{
+grid-area: mancuerna1;
+width: 100%;
+height: 100%;
+}
+
+.mancuerna2{
+  grid-area: mancuerna2;
+  width: 100%;
+  height: 100%;
+}
+
+.mancuerna3{
+  grid-area: mancuerna3;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.imagenPelota1{
+grid-area: imagenPelota1;
+width: 100%;
+height: 100%;
+}
+
+.imagenPelota2{
+  grid-area: imagenPelota2;
+  width: 100%;
+  height: 100%;
+  }
+
+.imagenPelota3{
+  grid-area: imagenPelotae;
+  width: 100%;
+  height: 100%;
+}
+
+.tituloPelotas {
+  grid-area: tituloPelotas;
+  width: 100%;
+  text-align: center;
+  background-color: ORANGE;  
+}
+
+.tituloMancuernas{
+  grid-area: tituloMancuernas;
+  width: 100%;
+  text-align: center;
+  background-color: ORANGE; 
+}
+.tituloBicicletas{
+  grid-area: tituloBicicletas;
+  width: 100%;
+  text-align: center;
+  background-color: ORANGE; 
+}
+
+.imagenPelotas{
+  grid-area: imagenPelotas;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.imagenMancuernas{
+  grid-area: imagenMancuernas;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.imagenBicicletas{
+  grid-area: imagenBicicletas;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.imagenPresentacion{
+  grid-area: imagenPresentacion;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.imagenNosotros{
+  max-width: 100%;
+  height: auto;
+
+}
+
+.titulo{
+  grid-area: titulo;
+  font-size: 2rem;   
+  text-align: center;
+
+}
+
+.imagenLocal{
+ grid-area: foto;
+ max-width: 100%;
+ height: auto;
+}
+
+.imagenLocalViejo{
+margin: 0 auto;
+width: 411px;
+display: flex;
+height: 300px;
+
+}
+
+.parrafo{
+      grid-area: parrafo;    
+      font-family: "PT Sans Narrow", sans-serif;
+      text-align: justify;
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px 20px;
+}
+
+.main__video{
+  margin: 0 auto;
+  grid-area:videoNosotros;
+}
+
+.gridContainerPromociones{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 0.01fr  0.25fr 0.5fr 0.1fr 0.25fr;
+ grid-template-areas: "header header"
+                      "imagenPromocion imagenPromocion" 
+                      "imagenBici       imagenPelota"    
+                       "textoBici        textoPelota" 
+                       "footer           footer";
+ gap: 20px;
+}
+
+#textoBici{
+  grid-area: textoBici;
+}
+
+#textoPelota{
+ grid-area: textoPelota;
+
+}
+
+
+#imagenPromocion{
+  grid-area: imagenPromocion;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#imagenBici{
+ grid-area: imagenBici;
+ margin: 0 auto;
+
+}
+
+#imagenPelota{
+  grid-area: imagenPelota;
+  margin:0 auto;
+ 
+
+
+@media only screen and (min-width:0px) and (max-width:575.98px){
+	.gridContainerProductos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  grid-template-rows: minmax(150px,200px);
+  column-gap: 20px;
+  background-color: #272727;
+  grid-auto-flow: dense;
+}
+}
+
+@media only screen and (min-width:576px) and (max-width:767.98px){
+	.gridContainerProductos{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-template-rows: minmax(250px,300px);
+  column-gap: 20px;
+  background-color: #272727;
+  grid-auto-flow: dense;
+}}
