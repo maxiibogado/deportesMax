@@ -616,6 +616,11 @@ height: 100%;
   background-color:orange;  
 }
 
+
+
+
+
+
 .tituloMancuernas{
   grid-area: tituloMancuernas;
   width: 100%;
@@ -671,6 +676,8 @@ height: 100%;
   grid-area: titulo;
   font-size: 2rem;   
   text-align: center;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(3,143,210,1) 78%, rgba(0,212,255,1) 100%);
 
 }
 
