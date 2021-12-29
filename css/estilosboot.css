@@ -4,17 +4,7 @@
   box-sizing: border-box;
 
 }
-.grid-container{
-  display: grid;
-  grid-template-areas: "header"
-  "mancuerna"
-  "descripcion"
-  "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: auto 500px auto auto;
-  overflow: hidden;
-  gap:20px;
-}
+
 
 .gridContainerNosotros{
   display: grid;
@@ -67,8 +57,7 @@ flex-direction: row;
 }
 
 
-.header__logo {
- 
+.header__logo { 
   width: 150px;
   padding: 10px 20px;
 }
