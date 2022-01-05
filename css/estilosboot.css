@@ -444,21 +444,12 @@ height: 100%;
   
 }
 
-.imagenMancuernas{
-  grid-area: imagenMancuernas;
-  width: 100%;
-  height: 100%;
-  
-  
+.w-100 {
+  width: 100% !important;
+  height: 80vh;
 }
 
-.imagenBicicletas{
-  grid-area: imagenBicicletas;
-  width: 100%;
-  height: 100%;
-  
-  
-}
+
 
 .imagenPresentacion{
   grid-area: imagenPresentacion;
@@ -476,19 +467,9 @@ height: 100%;
 
 
 
-.imagenLocal{
- grid-area: foto;
- max-width: 100%;
- height: auto;
-}
 
-.imagenLocalViejo{
-margin: 0 auto;
-width: 411px;
-display: flex;
-height: 300px;
 
-}
+
 
 .parrafo{
       grid-area: parrafo;    
@@ -504,26 +485,9 @@ height: 300px;
   grid-area:videoNosotros;
 }
 
-.gridContainerPromociones{
- display: grid;
- grid-template-columns: 1fr 1fr;
- grid-template-rows: 0.01fr  0.25fr 0.5fr 0.1fr 0.25fr;
- grid-template-areas: "header header"
-                      "imagenPromocion imagenPromocion" 
-                      "imagenBici       imagenPelota"    
-                       "textoBici        textoPelota" 
-                       "footer           footer";
- gap: 20px;
-}
 
-#textoBici{
-  grid-area: textoBici;
-}
 
-#textoPelota{
- grid-area: textoPelota;
 
-}
 
 
 #imagenPromocion{
@@ -535,15 +499,9 @@ height: 300px;
   width: 100%;
 }
 
-#imagenBici{
- grid-area: imagenBici;
- margin: 0 auto;
 
-}
 
-#imagenPelota{
-  grid-area: imagenPelota;
-  margin:0 auto;
+
  
 
 
