@@ -436,13 +436,7 @@ height: 100%;
   background-color: ORANGE; 
 }
 
-.imagenPelotas{
-  grid-area: imagenPelotas;
-  width: 100%;
-  height: 100%;
-  
-  
-}
+
 
 .w-100 {
   width: 100% !important;
@@ -471,11 +465,10 @@ height: 100%;
 
 
 
-.parrafo{
-      grid-area: parrafo;    
+.parrafo{    
       font-family: "PT Sans Narrow", sans-serif;
       text-align: justify;
-      width: 800px;
+      width: 75%;
       margin: 0 auto;
       padding: 10px 20px;
 }
@@ -505,23 +498,6 @@ height: 100%;
  
 
 
-@media only screen and (min-width:0px) and (max-width:575.98px){
-	.gridContainerProductos{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-  grid-template-rows: minmax(150px,200px);
-  column-gap: 20px;
-  background-color: #272727;
-  grid-auto-flow: dense;
-}
-}
 
-@media only screen and (min-width:576px) and (max-width:767.98px){
-	.gridContainerProductos{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-  grid-template-rows: minmax(250px,300px);
-  column-gap: 20px;
-  background-color: #272727;
-  grid-auto-flow: dense;
-}}
+
+
