@@ -1,0 +1,25 @@
+{
+  "name": "deportesmax-bogado-bootsrap",
+  "version": "1.0.0",
+  "description": "testConNode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss CSS/style.css", 
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxiibogado/deportesMax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxiibogado/deportesMax/issues"
+  },
+  "homepage": "https://github.com/maxiibogado/deportesMax#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

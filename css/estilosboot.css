@@ -462,6 +462,19 @@ height: 100%;
 
 
 
+.fondo__formulario{
+  background-color: #454545;
+  color: #FDFEFE;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  color: #FDFEFE;
+  background-color:black ;
+  border-color: #006600;
+  box-shadow: 0 0 0 .25rem green;
+}
+
 
 
 
