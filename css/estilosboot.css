@@ -47,11 +47,7 @@ justify-content:space-between;
 
 }
 
-.item9{
-grid-area: footer;
-background-color: gray;
-flex-direction: row;
-}
+
 
 
   .header__navflex {
@@ -65,37 +61,7 @@ flex-direction: row;
 }
 
 
-.header__logo { 
-  width: 150px;
-  padding: 10px 20px;
-}
 
-.header__listflex {
-  display: flex;
-  list-style: none;
-  position: relative;
-  flex-wrap: wrap;
-  
-  
-} 
-
-.header__itemflex{
-margin: 0px 1rem;
-
-}
-
-.header__linkflex{
-  text-decoration: none;
-  color:#272727;
-  font-weight: bold;
-}
-
-.imagen__principal{
-  max-width: 100%;
-  height: auto;
-  width: 800px;
-  
-}
 
 .main__titulo{
   font-size: 2rem;
@@ -201,28 +167,11 @@ margin: 0px 1rem;
 
 .heartbeat{animation:heartbeat 1.5s ease-in-out infinite both}
 
-@keyframes heartbeat{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}
+@keyframes heartbeat{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out
 
 
 
 
-
-
-
-
-
-  
-
-
-
-
-
-
-.imagenPelota2{
-  grid-area: imagenPelota2;
-  width: 100%;
-  height: 100%;
-  }
 
 .gradienteContacto{
     font-size: 2rem;
