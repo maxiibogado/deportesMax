@@ -5,26 +5,11 @@
 
 }
 
-#galeria img{
-width: 100%;
+.header__logo {
+  width: 150px;
+  padding: 5px 5px;
 }
 
-#galeria.col-lg-4{
- padding: 20px;
-}
-
-
-
-
-header {
-  grid-area: header;
-  justify-content: space-between;
-  background-color: #fff;
-  display: flex;
-  padding: 20px 10px;
-  align-items: center;
- 
-}
 
 .imagenPresentacion {
   overflow: hidden;
@@ -69,10 +54,6 @@ header {
   }
 }
 
-
-
-
-
 .kenburns-bottom-right {
 	-webkit-animation: kenburns-bottom-right 5s ease-out infinite both;
 	        animation: kenburns-bottom-right 5s ease-out infinite both;
@@ -113,34 +94,6 @@ header {
     color: seashell;
 }
 
-
-
-
-  .header__navflex {
-    display: flex;
-    padding: 20px 10px;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: black;
-    height: 100%;
-}
-
-
-
-
-
-.main__titulo{
-  font-size: 2rem;
-  text-align: center;
-  font-family: Outfit, sans-serif;
-  text-decoration: underline;
-  padding: 10px;
-  position: absolute;
-  left: 24%;
-  bottom: 67%;
-}
-
 .focus-in-expand{animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) 2}
 
  @keyframes focus-in-expand{0%{letter-spacing:-.5em;filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
@@ -166,44 +119,11 @@ header {
 
 @keyframes blink-2{0%{opacity:1}50%{opacity:.2}100%{opacity:1}}
 
-.gradienteTitulo{
-    background-image: linear-gradient(240deg,#365899 0%,#992a09 35%,#a76c51 85%,#a76c51 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
+
 
 .slide-in-blurred-left{animation:slide-in-blurred-left 2s cubic-bezier(.23,1.000,.32,1.000) 1 both}
 
 @keyframes slide-in-blurred-left{0%{transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform-origin:100% 50%;filter:blur(40px);opacity:0}100%{transform:translateX(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}}
-
-
-.main__titulo--secundario1 {
-  font-size: 1.5rem;
-  position: absolute;
-  left: 26%;
-  bottom:32%;
-  font-style: italic;
-  
-}
-
-  .main__titulo--secundario2 {
-      font-size: 1.5rem;
-      position: absolute;
-     bottom: 31%;
-      font-style: italic;
-     left:71%
-      
-  }
-
-
-  .main__descripcion--parrafo {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-  
-}
-
-
 
  
     .main__descripcion {
@@ -214,23 +134,6 @@ header {
       font-family: "PT Sans Narrow", sans-serif;
       text-align: justify;
   }
-
-
-
-  .main__descripcion--titulo {
-    font-size: 2rem;
-    text-decoration: underline;
-    display: block;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.main__imagenyTitulo{
- height: 68vh;
- width: 96%;
- max-width: 650px;
- margin: 0 auto;
-}
 
 .heartbeat {
 	-webkit-animation: heartbeat 2s ease-in-out infinite both;
@@ -307,8 +210,6 @@ header {
 }
 
 
-
-
 .gradienteContacto{
     font-size: 2rem;
     background-color: #21D4FD;
@@ -319,21 +220,6 @@ header {
   text-align: center;
   background-color: ORANGE;  
 }
-
-.tituloMancuernas{
-  grid-area: tituloMancuernas;
-  width: 100%;
-  text-align: center;
-  background-color: ORANGE; 
-}
-.tituloBicicletas{
-  grid-area: tituloBicicletas;
-  width: 100%;
-  text-align: center;
-  background-color: ORANGE; 
-}
-
-
 
 .w-100 {
   width: 100% !important;
@@ -416,19 +302,10 @@ header {
 }
 
 
-
-
-
-
-
 .imagenNosotros{
   max-width: 100%;
   height: auto;
-
 }
-
-
-
 
 .fondo__formulario{
   background-color: #454545;
@@ -443,9 +320,6 @@ header {
   box-shadow: 0 0 0 .25rem green;
 }
 
-
-
-
 .parrafo{    
       font-family: "PT Sans Narrow", sans-serif;
       text-align: justify;
@@ -454,26 +328,14 @@ header {
       padding: 10px 20px;
 }
 
-.main__video{
-  margin: 0 auto;
-  grid-area:videoNosotros;
+.gradienteCard{
+  background: #cc2b5e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 
-
-
-
-
-
-
-#imagenPromocion{
-  grid-area: imagenPromocion;
-  height: 45vh;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
-}
 
 
 
