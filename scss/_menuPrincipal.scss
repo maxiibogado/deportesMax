@@ -1,0 +1,40 @@
+$heightMenu: 80vh;
+$widhtMenu:100% !important;
+
+
+div div div {
+
+            h1{ 
+ animation:slide-in-blurred-left 2s cubic-bezier(.23,1.000,.32,1.000) 1 both;
+ @keyframes slide-in-blurred-left{0%{transform:translateX(-1000px) scaleX(2.5) scaleY(.2);transform-origin:100% 50%;filter:blur(40px);opacity:0}100%{transform:translateX(0) scaleY(1) scaleX(1);transform-origin:50% 50%;filter:blur(0);opacity:1}}
+            }
+            h2{
+                animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) 2;
+                @keyframes focus-in-expand{0%{letter-spacing:-.5em;filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+            }
+
+            p{
+                animation-duration: 3s; 
+                animation-name: slidein;
+                @keyframes slidein {
+                    from {
+                      margin-left: 50%;
+                      width: 100%
+                    }
+                  
+                    to {
+                      margin-left: 0%;
+                      width: 70%;
+                    }
+                  }
+            }
+
+            div div div img {
+                width: $widhtMenu;
+                height: $heightMenu;
+            }
+
+}
+
+
+

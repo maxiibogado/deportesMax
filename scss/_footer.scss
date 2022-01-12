@@ -1,0 +1,41 @@
+@import "./navbar";
+$widthSVG:50px;
+$heightSVG:50px;
+$colorIG:#824588;
+$colorYT:#ED4F1C;
+$colorFC:rgb(11, 88, 202);
+$colorTw:rgb(29, 155, 240);
+$colorLink:indigo;
+
+
+
+footer{
+ background-color: $bgcolor;
+        div p a {
+        color: $colorLink;
+        }
+ 
+        div ul li a svg.bi.bi-instagram{
+            width: $widthSVG;
+            height: $heightSVG;
+            color: $colorIG;
+            }
+        div ul li a svg.bi.bi-youtube{
+            width: $widthSVG;
+            height: $heightSVG;
+            color: $colorYT;
+        }
+        div ul li a svg.bi.bi-facebook{
+            width: $widthSVG;
+            height: $heightSVG;
+            color:$colorFC;
+        }
+        div ul li a svg.bi.bi-twitter{
+            width: $widthSVG;
+            height: $heightSVG;
+            color: $colorTw;
+        }
+
+
+
+}
