@@ -1,10 +1,14 @@
 $bgcolor:grey;  
 
+.header__logo{
+  width: 150px;
+  padding: 5px 5px;
+}
+
 nav{
    background-color: $bgcolor;
       div a img {
-        width: 150px;
-        padding: 5px 5px;
+        @extend .header__logo;
       }
 }         
 

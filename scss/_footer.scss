@@ -7,12 +7,23 @@ $colorFC:rgb(11, 88, 202);
 $colorTw:rgb(29, 155, 240);
 $colorLink:indigo;
 
+$coloresFooter:(
+'instagram': $colorIG,
+'youtube': $colorYT,
+'facebook': $colorFC,
+'twitter' : $colorTw,
+'mail' : $colorLink
+);
+
+
+
+
 
 
 footer{
  background-color: $bgcolor;
         div p a {
-        color: $colorLink;
+        color: map-get($map: $coloresFooter, $key:'mail');
         }
  
         div ul li a svg.bi.bi-instagram{

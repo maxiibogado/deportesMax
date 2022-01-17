@@ -1,0 +1,5 @@
+@import "./mixings";
+
+div div h1{
+@include animacionSlideInLeft;
+}

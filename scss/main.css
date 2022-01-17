@@ -5,13 +5,13 @@
           box-sizing: border-box;
 }
 
-nav {
-  background-color: grey;
-}
-
-nav div a img {
+.header__logo, nav div a img {
   width: 150px;
   padding: 5px 5px;
+}
+
+nav {
+  background-color: grey;
 }
 
 div div div h1 {
@@ -124,17 +124,43 @@ div div div p {
 }
 
 div div div div div div img {
-  width: 100% !important;
   height: 80vh;
+  width: 100% !important;
+}
+
+div div h1 {
+  -webkit-animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1) 1 both;
+          animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1) 1 both;
+}
+
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.header__logo, nav div a img {
+  width: 150px;
+  padding: 5px 5px;
 }
 
 nav {
   background-color: grey;
-}
-
-nav div a img {
-  width: 150px;
-  padding: 5px 5px;
 }
 
 footer {
