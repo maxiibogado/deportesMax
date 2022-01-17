@@ -1,5 +1,13 @@
 @import "./mixings";
+@import "./menuPrincipal";
+
 
 div div h1{
 @include animacionSlideInLeft;
 }
+
+.parrafoProductos{
+    @extend .parrafo;
+    width:90%;
+    text-align: center;
+    }
