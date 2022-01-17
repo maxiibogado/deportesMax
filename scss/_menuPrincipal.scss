@@ -15,7 +15,7 @@ div div div {
             }
 
             div div div img {
-               @include alturaYAnchoCarrousel(80vh, 100% !important);
+               @include alturaYAncho(80vh, 100% !important);
             }
 
 }

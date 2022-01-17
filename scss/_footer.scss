@@ -1,4 +1,6 @@
 @import "./navbar";
+@import "./mixings";
+
 $widthSVG:50px;
 $heightSVG:50px;
 $colorIG:#824588;
@@ -16,35 +18,27 @@ $coloresFooter:(
 );
 
 
-
-
-
-
 footer{
  background-color: $bgcolor;
         div p a {
-        color: map-get($map: $coloresFooter, $key:'mail');
+        color:map-get($map: $coloresFooter, $key:'mail');
         }
  
         div ul li a svg.bi.bi-instagram{
-            width: $widthSVG;
-            height: $heightSVG;
-            color: $colorIG;
+            @include alturaYAncho($widthSVG,$heightSVG);
+            color:map-get($map: $coloresFooter, $key:'instagram');
             }
         div ul li a svg.bi.bi-youtube{
-            width: $widthSVG;
-            height: $heightSVG;
-            color: $colorYT;
+            @include alturaYAncho($widthSVG,$heightSVG);
+            color:map-get($map: $coloresFooter, $key:'youtube');
         }
         div ul li a svg.bi.bi-facebook{
-            width: $widthSVG;
-            height: $heightSVG;
-            color:$colorFC;
+            @include alturaYAncho($widthSVG,$heightSVG);
+            color:map-get($map: $coloresFooter, $key:'facebook');
         }
         div ul li a svg.bi.bi-twitter{
-            width: $widthSVG;
-            height: $heightSVG;
-            color: $colorTw;
+            @include alturaYAncho($widthSVG,$heightSVG);
+            color:map-get($map: $coloresFooter, $key:'twitter');
         }
 
 
