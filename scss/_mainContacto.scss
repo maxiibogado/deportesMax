@@ -1,4 +1,4 @@
-@import "./mixings";
+@import "./mixins";
 
 div h2.slide-in-blurred-left{
 @include animacionSlideInLeft;
