@@ -27,8 +27,8 @@
 }
 
 .kenburns-top {
-	-webkit-animation: kenburns-top 5s ease-out infinite both;
-	        animation: kenburns-top 5s ease-out infinite both;
+	-webkit-animation: kenburns-top 3s ease-out both;
+	        animation: kenburns-top 3s ease-out both;
 }
 
 @-webkit-keyframes kenburns-top {
@@ -59,6 +59,7 @@
             transform-origin: top;
   }
 }
+
 
 /* se utiliza para el index.html y nosotros.html */
 

@@ -44,8 +44,8 @@ nav {
 }
 
 .kenburns-top {
-  -webkit-animation: kenburns-top 5s ease-out infinite both;
-  animation: kenburns-top 5s ease-out infinite both;
+  -webkit-animation: kenburns-top 3s ease-out both;
+  animation: kenburns-top 3s ease-out both;
 }
 
 @-webkit-keyframes kenburns-top {
@@ -322,8 +322,8 @@ div div h1 {
 }
 
 .kenburns-bottom-right {
-  -webkit-animation: kenburns-bottom-right 5s ease-out infinite both;
-  animation: kenburns-bottom-right 5s ease-out infinite both;
+  -webkit-animation: kenburns-bottom-right 3s ease-out  both;
+  animation: kenburns-bottom-right 3s ease-out  both;
 }
 
 @-webkit-keyframes kenburns-bottom-right {
@@ -362,8 +362,8 @@ div div h1 {
 }
 
 .kenburns-top-right {
-  -webkit-animation: kenburns-top-right 5s ease-out infinite both;
-  animation: kenburns-top-right 5s ease-out infinite both;
+  -webkit-animation: kenburns-top-right 3s ease-out  both;
+  animation: kenburns-top-right 3s ease-out  both;
 }
 
 @-webkit-keyframes kenburns-top-right {
