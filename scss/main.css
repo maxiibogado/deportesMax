@@ -15,6 +15,12 @@ nav {
   background-color: grey;
 }
 
+/* Para nosotros.html,contacto.html y productos.html. , promociones.html */
+.foo {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* Para nosotros.html,contacto.html y productos.html. */
 .imagenSinSobrepasar {
   overflow: hidden;
@@ -26,7 +32,7 @@ nav {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 43%;
+  left: 38%;
   top: 44%;
 }
 
@@ -85,6 +91,7 @@ nav {
   width: 70%;
   margin: 0 auto;
   padding: 10px 20px;
+  
 }
 
 /*se utiliza para el video de nosotros.html */
@@ -290,7 +297,7 @@ div div div div div div img {
   padding: 10px 20px;
 }
 
-div div h1 {
+h1 {
   -webkit-animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1) 1 both;
           animation: slide-in-blurred-left 2s cubic-bezier(0.23, 1, 0.32, 1) 1 both;
 }
@@ -434,6 +441,11 @@ div h2.slide-in-blurred-left {
   border-color: #006600;
   -webkit-box-shadow: 0 0 0 .25rem green;
           box-shadow: 0 0 0 .25rem green;
+}
+
+.estiloCarta {
+  border: 5px solid black;
+  background-color: cornsilk;
 }
 
 .header__logo, nav div a img {
